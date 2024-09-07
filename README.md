@@ -5,3 +5,12 @@ HTTP Flood는 공격자가 웹 서버 또는 애플리케이션을 공격하기 
 ![image](https://github.com/user-attachments/assets/c3a37c36-ba71-4d75-8547-4579e126ac10)
 
 # HOW TO USE?
+```
+cd https://github.com/madanokr001/WebWave-DDos.git
+```
+```
+ls
+```
+```
+python WebWave.py
+```
