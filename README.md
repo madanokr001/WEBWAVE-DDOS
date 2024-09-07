@@ -4,6 +4,13 @@ HTTP Flood는 공격자가 웹 서버 또는 애플리케이션을 공격하기 
 
 ![image](https://github.com/user-attachments/assets/c3a37c36-ba71-4d75-8547-4579e126ac10)
 
+# 성능 화력
+
+![image](https://github.com/user-attachments/assets/7a7151df-7e81-4cfd-82de-537257893c5d)
+
+![image](https://github.com/user-attachments/assets/75391c88-060d-402e-a1a8-437cf5ea28d1)
+
+
 # HOW TO USE?
 ```
 git clone https://github.com/madanokr001/WebWave-DDos.git
